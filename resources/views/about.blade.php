@@ -21,20 +21,20 @@
     <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
         <li class="icon-box">
             <i class="fas fa-home"></i>
-            <a href="http://127.0.0.1:8000/Portfolio">
+            <a href="{{route('portfolio')}}">
                 <h2>Home</h2>
             </a>
         </li>
         <li class="icon-box active">
             <i class="fas fa-user"></i>
-            <a href="http://127.0.0.1:8000/about">
+            <a href="{{route('about')}}">
                 <h2>About</h2>
             </a>
         </li>
        
         <li class="icon-box">
             <i class="fas fa-envelope-open"></i>
-            <a href="http://127.0.0.1:8000/contact">
+            <a href="{{route('contact')}}">
                 <h2>Contact</h2>
             </a>
         </li>
@@ -47,8 +47,8 @@
             <span></span>
             <span></span>
             <ul class="list-unstyled" id="menu">
-                <li><a href="{{ route('Portfolio') }}"><i class="fa fa-home"></i><span>Home</span></a></li>
-                <li class="active"><a href="{{ route('/about') }}"><i class="fa fa-user"></i><span>About</span></a></li>
+                <li><a href="{{ route('portfolio') }}"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li class="active"><a href="{{ route('about') }}"><i class="fa fa-user"></i><span>About</span></a></li>
                 <li><a href="{{ route('contact') }}"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
             </ul>
         </div>
@@ -86,7 +86,7 @@
                         </ul>
                     </div>
                     <div class="col-12 mt-3">
-                        <a href="http://127.0.0.1:8000/contact" class="btn btn-download">Contact</a>
+                        <a href="h{{route('contact')}}" class="btn btn-download">Contact</a>
                     </div>
                 </div>
             </div>
