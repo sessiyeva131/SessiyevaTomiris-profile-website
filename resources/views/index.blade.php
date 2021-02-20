@@ -21,19 +21,19 @@
     <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
         <li class="icon-box active">
             <i class="fas fa-home"></i>
-            <a href="http://127.0.0.1:8000/Portfolio">
+            <a href="{{route('portfolio')}}">
                 <h2>Home</h2>
             </a>
         </li>
         <li class="icon-box">
             <i class="fas fa-user"></i>
-            <a href="http://127.0.0.1:8000/about">
+            <a href="{{route('about')}}">
                 <h2>About</h2>
             </a>
         </li>
         <li class="icon-box">
             <i class="fas fa-envelope-open"></i>
-            <a href="http://127.0.0.1:8000/contact">
+            <a href="{{route('contact')}}">
                 <h2>Contact</h2>
             </a>
         </li>
@@ -46,9 +46,9 @@
             <span></span>
             <span></span>
             <ul class="list-unstyled" id="menu">
-                <li class="active"><a href="http://127.0.0.1:8000/Portfolio"><i class="fas fa-home"></i><span>Home</span></a></li>
-                <li><a href="http://127.0.0.1:8000/about"><i class="fas fa-user"></i><span>About</span></a></li>
-                <li><a href="http://127.0.0.1:8000/contact"><i class="fas fa-envelope-open"></i><span>Contact</span></a></li>
+                <li class="active"><a href="{{route('portfolio')}}"><i class="fas fa-home"></i><span>Home</span></a></li>
+                <li><a href="{{route('about')}}"><i class="fas fa-user"></i><span>About</span></a></li>
+                <li><a href="{{route('contact')}}"><i class="fas fa-envelope-open"></i><span>Contact</span></a></li>
             </ul>
         </div>
     </nav>
@@ -62,7 +62,7 @@
                 <h6 class="text-uppercase open-sans-font mb-0 d-block d-sm-none d-lg-block">hi there !</h6>
                 <h1 class="text-uppercase poppins-font"><span>I'm</span> Tomiris Sessiyeva</h1>
                 <p class="open-sans-font">I'm a sophomore student at the SDU, majoring in Information Technologies. A fast learner and hard worker with high responsibility is seeking for an internship opportunity :)</p>
-                <a href="http://127.0.0.1:8000/about" class="btn btn-about">more about me</a>
+                <a href="{{route('about')}}" class="btn btn-about">more about me</a>
             </div>
         </div>
     </div>
