@@ -18,6 +18,7 @@ class BlogController extends Controller
         Post::create([
             'title' => $request->title,
             'body' => $request->body
+            
         ]);
 
         return back();
