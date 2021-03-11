@@ -11,7 +11,7 @@ class BlogController extends Controller
     public function index(){
         $posts = Post::all();
 
-        return view('post.index')->with(['posts' => $posts]);
+        return view('blog.index')->with(['posts' => $posts]);
     }
 
     public function store(Request $request){
