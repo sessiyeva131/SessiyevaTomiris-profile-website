@@ -79,10 +79,10 @@
     <form class="form" action="{{ route('add_post') }}" method="post">
     @csrf
         <label for="field1">
-        <span>Title: </span><input type="text" name="field1" required="true" />
+        <span>Title: </span><input type="text" name="title" required="true" />
         </label>
         <label for="field2">
-        <span>Body: </span><input type="text" name="field2" required="true" />
+        <span>Body: </span><input type="text" name="body" required="true" />
         </label>
         <label>
         <span> </span><input type="submit" value="Create Post" />
