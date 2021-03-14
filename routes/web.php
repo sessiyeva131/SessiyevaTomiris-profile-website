@@ -14,10 +14,10 @@ Route::view('/Portfolio', 'index')->name('portfolio');
 Route::view('/about', 'about')->name('about');
 Route::view('/contact', 'contact')->name('contact');
 
-Route::get('/post/add/{title}/{body}', function(){
+Route::get('/post/add', function(){
     DB::table('post')->insert([
-        'title' => '$title',
-        'body' => '$body'
+        'title' => 'myPost',
+        'body' => 'new post created'
     ]);
 });
 
@@ -27,9 +27,10 @@ Route::get('/post', function(){
 });
 
 Route::get('/blog/index', [BlogController::class, 'index']);
-
 Route::get('/blog/create', function(){
     return view('post.create');
 });
 
 Route::post('/blog/create', [BlogController::class, 'store'])->name('add_post');
+
+Route::get('/post/{id}', [BlogController::class, 'get_info']);
