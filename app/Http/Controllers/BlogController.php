@@ -10,7 +10,6 @@ class BlogController extends Controller
     //
     public function index(){
         $posts = Post::all();
-
         return view('post.index')->with(['posts' => $posts]);
     }
 
@@ -21,5 +20,14 @@ class BlogController extends Controller
         ]);
 
         return back();
+    }
+
+    public function get_info($id){
+        $mypost = Post::find($id);
+
+        if($mypost == null)
+            return response(404);
+        
+        return view('post.info')->with(['info' => $mypost]);
     }
 }
