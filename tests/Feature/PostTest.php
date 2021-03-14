@@ -36,4 +36,10 @@ class PostTest extends TestCase
         $response = $this->get('/post/2');
         $response->assertViewHas('info');
     }
+
+    public function test_create_post()
+    {
+        $response = $this->get('/blog/create');
+        $response->assertStatus(200);
+    }
 }
