@@ -22,20 +22,39 @@
         <li class="icon-box">
             <i class="fas fa-home"></i>
             <a href="{{route('portfolio')}}">
-                <h2>Home</h2>
+                <h2>{{__('about.home')}}</h2>
             </a>
         </li>
         <li class="icon-box active">
             <i class="fas fa-user"></i>
             <a href="{{route('about')}}">
-                <h2>About</h2>
+                <h2>{{__('about.about')}}</h2>
             </a>
         </li>
        
         <li class="icon-box">
             <i class="fas fa-envelope-open"></i>
             <a href="{{route('contact')}}">
-                <h2>Contact</h2>
+                <h2>{{__('about.contact')}}</h2>
+            </a>
+        </li>
+
+        <li class="icon-box">
+            <i class="fa fa-language"></i>
+            <a href="{{route('aboutt','en')}}" class="drp">
+                <h2>EN</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-language"></i>
+            <a href="{{route('aboutt','ru')}}" class="drp">
+                <h2>RU</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-language"></i>
+            <a href="{{route('aboutt','kz')}}" class="drp">
+                <h2>KZ</h2>
             </a>
         </li>
     </ul>
@@ -47,17 +66,17 @@
             <span></span>
             <span></span>
             <ul class="list-unstyled" id="menu">
-                <li><a href="{{ route('portfolio') }}"><i class="fa fa-home"></i><span>Home</span></a></li>
-                <li class="active"><a href="{{ route('about') }}"><i class="fa fa-user"></i><span>About</span></a></li>
-                <li><a href="{{ route('contact') }}"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                <li><a href="{{ route('portfolio') }}"><i class="fa fa-home"></i><span>{{__('about.home')}}</span></a></li>
+                <li class="active"><a href="{{ route('about') }}"><i class="fa fa-user"></i><span>{{__('about.about')}}</span></a></li>
+                <li><a href="{{ route('contact') }}"><i class="fa fa-envelope-open"></i><span>{{__('about.contact')}}</span></a></li>
             </ul>
         </div>
     </nav>
 </header>
 
 <section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
-    <h1>ABOUT <span>ME</span></h1>
-    <span class="title-bg">Resume</span>
+    <h1>{{__('about.a')}} <span>{{__('about.me')}}</span></h1>
+    <span class="title-bg">{{__('about.resume')}}</span>
 </section>
 <section class="main-content revealator-slideup revealator-once revealator-delay1">
     <div class="container">
@@ -65,28 +84,28 @@
             <div class="col-12 col-lg-5 col-xl-6">
                 <div class="row">
                     <div class="col-12">
-                        <h3 class="text-uppercase custom-title mb-0 ft-wt-600">personal infos & skills</h3>
+                        <h3 class="text-uppercase custom-title mb-0 ft-wt-600">{{__('about.title')}}</h3>
                     </div>
                     <div class="col-12 d-block d-sm-none">
                     </div>
                     <div class="col-6">
                         <ul class="about-list list-unstyled open-sans-font">
-                            <li> <span class="title">First name :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Tomiris</span> </li>
-                            <li> <span class="title">Last name :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Sessiyeva</span> </li>
-                            <li> <span class="title">Age :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">19 years old</span> </li>
-                            <li> <span class="title">Nationality :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Kazakh</span> </li>
+                            <li> <span class="title">{{__('about.firstname')}}</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">{{__('about.fname')}}</span> </li>
+                            <li> <span class="title">{{__('about.lastname')}}</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">{{__('about.lname')}}</span> </li>
+                            <li> <span class="title">{{__('about.age')}}</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">{{__('about.ag')}}</span> </li>
+                            <li> <span class="title">{{__('about.nationality')}}</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">{{__('about.n')}}</span> </li>
                         </ul>
                     </div>
                     <div class="col-6">
                         <ul class="about-list list-unstyled open-sans-font">
-                            <li> <span class="title">City :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Nur-Sultan</span> </li>
-                            <li> <span class="title">Phone :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">+77782056535</span> </li>
-                            <li> <span class="title">Email :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">sessiyeva@gmail.com</span> </li>
-                            <li> <span class="title">Langages :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Kazakh, Russian, English, Turkish</span> </li>
+                            <li> <span class="title">{{__('about.city')}}</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">{{__('about.c')}}</span> </li>
+                            <li> <span class="title">{{__('about.phone')}}</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">+77782056535</span> </li>
+                            <li> <span class="title">{{__('about.email')}}</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">sessiyeva@gmail.com</span> </li>
+                            <li> <span class="title">{{__('about.languages')}}</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">{{__('about.l')}}</span> </li>
                         </ul>
                     </div>
                     <div class="col-12 mt-3">
-                        <a href="h{{route('contact')}}" class="btn btn-download">Contact</a>
+                        <a href="h{{route('contact')}}" class="btn btn-download">{{__('about.contact')}}</a>
                     </div>
                 </div>
             </div>
